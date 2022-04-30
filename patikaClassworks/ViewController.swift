@@ -8,8 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let username = "eneskzlcn"
-    let password = "enes"
+    let username = "e"
+    let password = "e"
     
     @IBOutlet weak var usernameTF: UITextField!
     
@@ -17,17 +17,20 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var infoLBL: UILabel!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
       
     }
 
     @IBAction func onTapWelcomeButton(_ sender: UIButton) {
+        
         if let usernameInp = usernameTF.text, let passwordInp = passwordTF.text{
             
             if usernameInp == username, passwordInp == password {
                 infoLBL.textColor = .green
-                infoLBL.text = "You logged in."
+                activityIndicator.startAnimating()
             }
             else {
                 infoLBL.textColor = .red

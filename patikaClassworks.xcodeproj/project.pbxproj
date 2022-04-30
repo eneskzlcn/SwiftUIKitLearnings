@@ -99,10 +99,9 @@
 		2628E0E2281CDA0700F83B8F /* patikaClassworks */ = {
 			isa = PBXGroup;
 			children = (
-				2628E116281CDDE200F83B8F /* Views */,
-				2628E115281CDDDC00F83B8F /* Models */,
-				2628E114281CDDCD00F83B8F /* Controllers */,
-				2628E113281CDD0D00F83B8F /* Supporting Files */,
+				2628E11D281D57B900F83B8F /* Supportting Files */,
+				2628E11B281D578B00F83B8F /* Views */,
+				2628E118281D575E00F83B8F /* Controllers */,
 			);
 			path = patikaClassworks;
 			sourceTree = "<group>";
@@ -124,7 +123,23 @@
 			path = patikaClassworksUITests;
 			sourceTree = "<group>";
 		};
-		2628E113281CDD0D00F83B8F /* Supporting Files */ = {
+		2628E118281D575E00F83B8F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2628E0E7281CDA0700F83B8F /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2628E11B281D578B00F83B8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2628E0E9281CDA0700F83B8F /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2628E11D281D57B900F83B8F /* Supportting Files */ = {
 			isa = PBXGroup;
 			children = (
 				2628E0EE281CDA0900F83B8F /* LaunchScreen.storyboard */,
@@ -133,30 +148,7 @@
 				2628E0EC281CDA0900F83B8F /* Assets.xcassets */,
 				2628E0F1281CDA0900F83B8F /* Info.plist */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2628E114281CDDCD00F83B8F /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				2628E0E7281CDA0700F83B8F /* ViewController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		2628E115281CDDDC00F83B8F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		2628E116281CDDE200F83B8F /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				2628E0E9281CDA0700F83B8F /* Main.storyboard */,
-			);
-			name = Views;
+			path = "Supportting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,7 +464,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = patikaClassworks/Info.plist;
+				INFOPLIST_FILE = "patikaClassworks/Supportting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -499,7 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = patikaClassworks/Info.plist;
+				INFOPLIST_FILE = "patikaClassworks/Supportting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
