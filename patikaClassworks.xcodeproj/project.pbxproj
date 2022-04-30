@@ -99,13 +99,10 @@
 		2628E0E2281CDA0700F83B8F /* patikaClassworks */ = {
 			isa = PBXGroup;
 			children = (
-				2628E0E3281CDA0700F83B8F /* AppDelegate.swift */,
-				2628E0E5281CDA0700F83B8F /* SceneDelegate.swift */,
-				2628E0E7281CDA0700F83B8F /* ViewController.swift */,
-				2628E0E9281CDA0700F83B8F /* Main.storyboard */,
-				2628E0EC281CDA0900F83B8F /* Assets.xcassets */,
-				2628E0EE281CDA0900F83B8F /* LaunchScreen.storyboard */,
-				2628E0F1281CDA0900F83B8F /* Info.plist */,
+				2628E116281CDDE200F83B8F /* Views */,
+				2628E115281CDDDC00F83B8F /* Models */,
+				2628E114281CDDCD00F83B8F /* Controllers */,
+				2628E113281CDD0D00F83B8F /* Supporting Files */,
 			);
 			path = patikaClassworks;
 			sourceTree = "<group>";
@@ -125,6 +122,41 @@
 				2628E106281CDA0900F83B8F /* patikaClassworksUITestsLaunchTests.swift */,
 			);
 			path = patikaClassworksUITests;
+			sourceTree = "<group>";
+		};
+		2628E113281CDD0D00F83B8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2628E0EE281CDA0900F83B8F /* LaunchScreen.storyboard */,
+				2628E0E3281CDA0700F83B8F /* AppDelegate.swift */,
+				2628E0E5281CDA0700F83B8F /* SceneDelegate.swift */,
+				2628E0EC281CDA0900F83B8F /* Assets.xcassets */,
+				2628E0F1281CDA0900F83B8F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2628E114281CDDCD00F83B8F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2628E0E7281CDA0700F83B8F /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2628E115281CDDDC00F83B8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2628E116281CDDE200F83B8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2628E0E9281CDA0700F83B8F /* Main.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
