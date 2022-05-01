@@ -8,8 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let username = "e"
-    let password = "e"
+
+    // MARK: PROPERTIES
+    
+    let username = "eneskzlcn"
+    let password = "enes"
+
+    // MARK: IBOUTLETS
     
     @IBOutlet weak var usernameTF: UITextField!
     
@@ -23,7 +28,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
       
     }
-
+    
+    // MARK: IBACTIONS
+    
     @IBAction func onTapWelcomeButton(_ sender: UIButton) {
         
         if let usernameInp = usernameTF.text, let passwordInp = passwordTF.text{
