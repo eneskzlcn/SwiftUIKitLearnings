@@ -1,42 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Wi-uf-3wu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vrZ-3D-9aM">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Initial Table View Controller-->
-        <scene sceneID="uU6-Qg-fx1">
+        <!--View Controller-->
+        <scene sceneID="Cab-ai-otj">
             <objects>
-                <tableViewController id="6Wi-uf-3wu" customClass="InitialTableViewController" customModule="patikaClassworks" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="brb-pc-boB">
+                <viewController id="vrZ-3D-9aM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fP1-y8-icu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="yjt-Pj-uJQ">
+                                <rect key="frame" x="22.5" y="139.5" width="330" height="388"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Zgo-gj-oWf">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="100"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="charizard" translatesAutoresizingMaskIntoConstraints="NO" id="h3U-mM-GDK">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="PC4-3j-hMQ"/>
+                                                    <constraint firstAttribute="width" constant="100" id="YCv-L5-sfH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alakazam" translatesAutoresizingMaskIntoConstraints="NO" id="aFD-AQ-8Ep">
+                                                <rect key="frame" x="115" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="Ahx-UX-wBz"/>
+                                                    <constraint firstAttribute="width" constant="100" id="MgF-OZ-c2j"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chansey" translatesAutoresizingMaskIntoConstraints="NO" id="emG-0n-pT3">
+                                                <rect key="frame" x="230" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="jxJ-iS-laL"/>
+                                                    <constraint firstAttribute="height" constant="100" id="uCf-4r-U7q"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="phq-QX-dm2">
+                                        <rect key="frame" x="5" y="144" width="320" height="100"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="machamp" translatesAutoresizingMaskIntoConstraints="NO" id="q0k-1v-EoW">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="B2X-sZ-WkL"/>
+                                                    <constraint firstAttribute="height" constant="100" id="wCa-pJ-9bX"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="wUX-JK-wGk">
+                                                <rect key="frame" x="110" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="OMK-Po-mQh"/>
+                                                    <constraint firstAttribute="width" constant="100" id="vXz-Vj-oqO"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mewtwo" translatesAutoresizingMaskIntoConstraints="NO" id="Fbw-To-zEN">
+                                                <rect key="frame" x="220" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="4t3-Un-ECY"/>
+                                                    <constraint firstAttribute="width" constant="100" id="Qaj-o1-PRA"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uVI-ld-7ns">
+                                        <rect key="frame" x="115" y="288" width="100" height="100"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="venusaur" translatesAutoresizingMaskIntoConstraints="NO" id="o4L-fX-7Pc">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="7Br-bm-rM7"/>
+                                                    <constraint firstAttribute="width" constant="100" id="mSu-C2-UoX"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bAi-hA-NsZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="lJG-VK-haD">
-                                <rect key="frame" x="0.0" y="49.5" width="375" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lJG-VK-haD" id="7kO-wT-7T0">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="6Wi-uf-3wu" id="5Xo-G8-kP5"/>
-                            <outlet property="delegate" destination="6Wi-uf-3wu" id="fjv-X7-MPu"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yH5-Jl-8qC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="yjt-Pj-uJQ" firstAttribute="centerX" secondItem="fP1-y8-icu" secondAttribute="centerX" id="7XU-6d-ItX"/>
+                            <constraint firstItem="yjt-Pj-uJQ" firstAttribute="centerY" secondItem="fP1-y8-icu" secondAttribute="centerY" id="AQw-Rt-Odn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cc2-O7-XM4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-196" y="27"/>
+            <point key="canvasLocation" x="-412" y="-29.23538230884558"/>
         </scene>
     </scenes>
     <resources>
+        <image name="alakazam" width="475" height="475"/>
+        <image name="chansey" width="475" height="475"/>
+        <image name="charizard" width="475" height="475"/>
+        <image name="machamp" width="475" height="475"/>
+        <image name="mewtwo" width="475" height="475"/>
+        <image name="pikachu" width="475" height="475"/>
+        <image name="venusaur" width="475" height="475"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
