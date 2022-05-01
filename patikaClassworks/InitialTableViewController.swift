@@ -9,7 +9,7 @@ import UIKit
 
 class InitialTableViewController: UITableViewController {
     
-    let tableData = [
+    var tableData = [
         ["🕐 Screen Time"],
         ["⚙️ General","👤 Accessibility","✋🏽 Privacy"],
         ["🔑 Passwords"],
@@ -41,6 +41,23 @@ class InitialTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = tableData[indexPath.section][indexPath.row]
         return cell
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let alertController = UIAlertController(title: "WARNING!", message: tableData[indexPath.section][indexPath.row], preferredStyle: .alert)
+        
+        alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+            alertController.dismiss(animated: true)
+            tableView.deselectRow(at: indexPath, animated: false)
+        }))
+        alertController.addAction(
+            UIAlertAction(title: "Delete", style: .destructive, handler: { _ in
+                self.tableData[indexPath.section].remove(at: indexPath.row)
+                tableView.reloadData()
+            })
+        )
+        
+        present(alertController, animated: true)
+    
     }
     /*
     // Override to support conditional editing of the table view.
